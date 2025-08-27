@@ -1,0 +1,9 @@
+streamlit
+langchain
+langchain-community
+langchain-groq 
+PyMuPDF
+pytesseract
+Pillow
+faiss-cpu
+sentence-transformers

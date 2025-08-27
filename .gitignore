@@ -1,0 +1,13 @@
+# Python virtual environment
+venv/
+.venv/
+
+# Ignore user-specific data and secrets
+data/raw_pdfs/
+data/processed_text/
+vector_store/
+.streamlit/secrets.toml
+
+# Python cache files
+__pycache__/
+*.pyc
