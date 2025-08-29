@@ -5,6 +5,7 @@ import uuid
 import re
 import matplotlib.pyplot as plt
 from datetime import datetime
+import os
 
 # Web scraping imports
 import requests
@@ -101,7 +102,7 @@ CUSTOM_PROMPT = PromptTemplate(template=SUSTAINABOT_PERSONA, input_variables=["c
 
 # --- API Key & Backend Functions ---
 try:
-    GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
+    GROQ_API_KEY = os.environ["GROQ_API_KEY"]
 except KeyError:
     st.error("GROQ_API_KEY not found! Please check your Streamlit secrets.")
     st.stop()
